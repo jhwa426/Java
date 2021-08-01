@@ -44,17 +44,67 @@ public class Lec04quiz{
 //		System.out.println("Sum = " + result);
 		
 		//Q6
+//		Scanner input = new Scanner(System.in);
+//		System.out.println("Enter number of rows: ");
+//		int row = input.nextInt();
+//		
+//		for (int i = row; i >= 1; i--) {
+//			for (int j = 1; j <= i; j++) {
+//				System.out.printf("%d", row-i+1);
+//			}
+//			System.out.println();
+//		}
 		
+		//Q7
+//		Scanner input = new Scanner(System.in);
+//		System.out.println("Enter number of rows: ");
+//		int row = input.nextInt();
+//		
+//		for (int i = 1; i <= row; i++) {
+//			for (int j = 1; j <= i; j++) {
+//				System.out.printf("%d", i);
+//			}
+//			System.out.println();
+//		}
 		
+		// Q8
+//       Scanner input = new Scanner(System.in);
+//       int guessNum, randNum;
+//       Random rand = new Random(30);
+//       randNum = rand.nextInt(10);
+//       
+//       System.out.println("Enter your guess number (0-9):");
+//       guessNum = input.nextInt();
+//
+//       if (guessNum <= randNum) {
+//    	   System.out.println("You won.");
+//       }
+//       else {
+//    	   System.out.printf("You lost. My number is %d but your guess is %d.\n",randNum, guessNum);
+//       }
+       
+       // Q9
+	    Scanner input = new Scanner(System.in);
+	    int firstNum = input.nextInt();
+	    input.nextLine();
+	    int secondNum = input.nextInt();
+	    
+	    if (firstNum % 2 == 0){
+	    	int total1 = ((firstNum+secondNum) / 2);
+	    	System.out.printf("Average is %d.00", total1);
+	    } else {
+		    double total = ((firstNum+secondNum) / 2.00);
+		    total = Math.round(total);
+
+		    System.out.printf("Average is %.2f", total);
+	    }
+	    
+
+	    
+       
+        
 		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	}
 }
