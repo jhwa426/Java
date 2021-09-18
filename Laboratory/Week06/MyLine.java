@@ -11,19 +11,19 @@ interface Iterator<E> {
 
 class MyLine implements Iterable <Point> {
 	private ArrayList<Point> points = new ArrayList<Point>();
-	
-	public void addPoint(int x, int y) { 
-		points.add(new Point(x, y)); 
+
+	public void addPoint(int x, int y) {
+		points.add(new Point(x, y));
 	}
-	
-	public Iterator<Point> iterator() { 
-		return new PointIterator(); 
+
+	public Iterator<Point> iterator() {
+		return new PointIterator();
 	}
 	//Q9
 	public static Point highestPoint(MyLine line) {
 		  Point highestPoint = new Point(0,0);
 		  Iterator<Point> pointIterator = line.iterator();
-		  
+
 		  while (pointIterator.hasNext()) {
 		      Point pt = pointIterator.next();
 		      if (pt.y > highestPoint.y){
@@ -33,25 +33,18 @@ class MyLine implements Iterable <Point> {
 		  }
 		  return highestPoint;
 		}
-	
+
 	public class PointIterator implements Iterator <Point>{
 		private int nextIndex = 0;
-		
+
 		public boolean hasNext() {
-			return nextIndex < points.size(); 
+			return nextIndex < points.size();
 		}
-		
+
 		public Point next() {
 			int count = nextIndex;
 			nextIndex++;
 			return points.get(count);
 		}
-		
-		public void remove() { 
-			  throw new UnsupportedOperationException();
-		}
-		
-		
-		
 	}
 }
