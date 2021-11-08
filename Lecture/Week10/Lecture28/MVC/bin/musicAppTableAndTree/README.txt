@@ -1,1 +1,0 @@
-Class MusicTrackReader expects the file named "cool_aussie_music.csv" to be stored immediately outside of the "src" folder within the Eclipse project.
